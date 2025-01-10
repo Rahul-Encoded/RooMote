@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        * {
+            font-family: monospace;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            color: #d3d3d3;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .login {
+            position: relative;
+            width: 320px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(20, 20, 20, 0.95);
+            border: 1px solid #0aa;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), 0 0 20px rgba(255, 0, 255, 0.2);
+			background: radial-gradient(
+				circle at top right,
+				rgba(0, 255, 255, 0.3) 30%,
+				transparent 70%
+			);
+        }
+
+        .login h1 {
+            color: #0aa;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(0, 170, 170, 0.7);
+        }
+
+        .btn {
+			padding: 12px 24px;
+    		font-size: 1.2rem;
+    		background-color: transparent;
+    		color: #f0f;
+    		border: 2px solid #f0f;
+    		border-radius: 4px;
+    		cursor: pointer;
+    		transition: all 0.3s ease;
+    		text-transform: uppercase;
+    		letter-spacing: 2px;
+        }
+
+        .btn-primary:hover {
+			background-color: #f0f;
+    		color: #0a0a0a;
+    		box-shadow: 0 0 20px #f0f;
+    		transition: 0.75s;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Home Automation</h1>
+		<br><br><br>
+        <form action="http://{{HTML_address}}:8080/LightON" method="post">
+            <button type="submit" class="btn btn-primary">Light on</button>
+			<br><br><br>
+        </form>
+        <form action="http://{{HTML_address}}:8080/LightOff" method="post">
+            <button type="submit" class="btn btn-primary">Light off</button>
+			<br><br><br>
+        </form>
+        <form action="http://{{HTML_address}}:8080/FanON" method="post">
+            <button type="submit" class="btn btn-primary">Fan on</button>
+			<br><br><br>
+        </form>
+        <form action="http://{{HTML_address}}:8080/FanOff" method="post">
+            <button type="submit" class="btn btn-primary">Fan off</button>
+			<br><br><br>
+        </form>
+    </div>
+</body>
+</html>

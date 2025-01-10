@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            font-family: monospace;
+            color: #fff;
+            text-align: center;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            padding: 30px;
+            border: 2px solid #0ff;
+            background-color: rgba(10, 10, 10, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 30px rgba(255, 0, 255, 0.2);
+            max-width: 500px;
+            background: radial-gradient(
+               circle at top right,
+               rgba(0, 255, 255, 0.3) 30%,
+               transparent 70%
+            );
+        }
+
+        .container p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #f0f;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #f0f;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            background-color: #f0f;
+            color: #0a0a0a;
+            box-shadow: 0 0 20px #f0f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Sorry, {{name}}, please log in again.</p>
+        <p>You might have entered the wrong ID or password. Please go to the login page.</p>
+        <a href="http://127.0.0.1:8080/login">Login Again</a>
+        <p>If you are a new user, please go to the sign-up page.</p>
+    </div>
+</body>
+</html>
