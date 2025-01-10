@@ -1,0 +1,8 @@
+Product       : Virtual Serial Ports Emulator (x64)
+Version       : 1.5.0.88
+Release date  : Oct 31, 2024
+
+2007-2024 Eterlogic Software
+
+Please visit our web page: https://www.eterlogic.com
+Thank you for using Eterlogic.com products!
